@@ -1,0 +1,187 @@
+@import "../../breakpoints.scss";
+
+.container {
+  background-color: #eaffe2;
+  width: 80vw;
+  height: 80vw;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  right: 0vw;
+  top: -40vw;
+
+
+  @include md {
+    width: 80vw;
+    height: 80vw;
+    right: 10vw;
+    top: -40vw;
+  }
+  @include lg {
+    right: -10vw;
+    top: -50vw;
+  }
+
+  z-index: 1;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+
+  .titleCategorie{
+    position: relative;
+    top: -170px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 19px;
+  }
+
+  .logoinSpin{
+    position: relative;
+    width: 200px;
+    margin: 90px;
+  }
+
+  .spinImage {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    top: 40vw;
+
+    @include md {
+      width: 56vw;
+      height: 56vw;
+      top: 50vw;
+    }
+    @include lg {
+      width: 45vw;
+      height: 45vw;
+      top: 58vw;
+    }
+    @include xl {
+      width: 45vw;
+      height: 45vw;
+    }
+
+    -webkit-transition: 300ms linear all;
+    -moz-transition: 300ms linear all;
+    -o-transition: 300ms linear all;
+    transition: 300ms linear all;
+    -ms-transition: 300ms linear all;
+  }
+}
+
+.buttonContainer {
+  width: 36vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 90vw;
+  right: 5vw;
+  top: 48vw;
+  @include md {
+    width: 50vw;
+    right: 25vw;
+    top: 42vw;
+  }
+  @include lg {
+    width: 36vw;
+    right: 12vw;
+    top: 35vw;
+  }
+
+  .buttonStyle {
+    z-index: 20;
+    cursor: pointer;
+  }
+}
+
+.photoShown {
+  position: absolute;
+  // right: 34vw;
+  // top: 31vw;
+  // height: 32vw;
+  z-index: 2;
+  // width: 32vw;
+  right: 29vw;
+  top: 31vw;
+  height: 43vw;
+  width: 43vw;
+
+  @include md {
+    right: 39vw;
+    top: 28vw;
+    width: 21vw;
+    height: 21vw;
+  }
+  @include lg {
+    right: 22vw;
+    top: 23vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  border-radius: 500px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  -moz-box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.startAnimation {
+  -webkit-animation: spin 0.2s linear;
+  -moz-animation: spin 0.2s linear;
+  animation: spin 0.2s linear;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(270deg) scale(0.6);
+  }
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(270deg) scale(0.6);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(270deg) scale(0.6);
+    transform: rotate(270deg) scale(0.6);
+    -moz-transform: rotate(270deg) scale(0.6);
+    -ms-transform: rotate(270deg) scale(0.6);
+    -o-transform: rotate(270deg) scale(0.6);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+    -moz-transform: rotate(360deg) scale(1);
+    -ms-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+  }
+}

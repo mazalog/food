@@ -1,0 +1,62 @@
+@import"../../breakpoints.scss";
+
+.container{
+  display: grid;
+  justify-self: start;
+  height: 105px;
+  @include md{
+    justify-self: center;
+  }
+  
+.btnRemove{
+  border: 0;
+  border-radius: 999px;
+  background: #7d53996b;
+  width: 31px;
+  color: #000;
+  font-size: 24px;
+  height: 31px;
+  top: -100px;
+  position: relative;
+  /* right: 15px; */
+  left: 60px;
+  cursor: pointer;
+ }
+.categoryItem {
+  display: flex;
+  height: 90px;
+  width: 90px;
+  font-size: 13px;
+  align-items: center;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: center;
+
+  /* flex-direction: column; */
+
+  //  @include md {
+  //     display: none;
+  //  }
+
+    a {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-width: 100px;
+      width: 100%;
+    }
+  
+
+    .emoji {
+      font-weight: 400;
+      font-family: apple color emoji, segoe ui emoji, noto color emoji,
+        android emoji, emojisymbols, emojione mozilla, twemoji mozilla,
+        segoe ui symbol;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+}

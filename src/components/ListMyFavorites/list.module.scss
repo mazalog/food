@@ -1,0 +1,93 @@
+@import "../../breakpoints.scss";
+
+.container{
+    margin-top: 20vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 80vh;
+    @include md{
+        margin-top: 7vw;
+    }
+
+    .h2{
+        line-height: 30px;
+        font-weight: 600;
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+    }
+    .elements{
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+        .container_row{
+            border-radius: 10px;
+            padding: 3vw;
+            margin-bottom: 4vw;
+            @include md{
+                height: 100px;
+            }
+            
+    
+            .container_favorite{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    width: 60px;
+                    height: 50px;
+                    margin-left: 30px;
+                    box-shadow: 0 10px 20px rgba(124, 124, 124, 0.5);
+                    border-radius: 50%;      
+                }
+        
+                .name{
+                 text-align: center;
+                 grid-column: 3 span;
+                 font-weight: 600;
+                 margin: 10px;
+                }
+                .price{
+                    text-align: center;
+                    font-weight: 700;
+                    color: #070605;
+                }
+        
+            }
+    
+            .container_buttons{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                align-items: center;
+                
+                button{
+                    // text-decoration: underline;
+                    // text-decoration-style: double;
+                    // text-underline-position: under;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background: none;
+                    border: none;
+                    outline: none;
+                }
+                .icon{
+                    width: 30px;
+                    padding: 2vw;
+                    display: inline-flex;
+                    justify-self: self-end;
+                  }
+            }
+        }
+    
+        h3{
+            text-align: center;
+        }
+    }
+
+
+}

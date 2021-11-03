@@ -1,0 +1,39 @@
+.btnCart{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+text-align: center;
+.actionCart{
+cursor: pointer;
+}
+.actionActive{
+border-bottom: 4px solid #5f3ac2;
+color: #5f3ac2;
+}
+.actionDesactive{
+border-bottom: 4px solid #80808030;
+}
+}
+.items{
+    margin-top: 3vw;
+    padding: 10px;
+    // overflow: scroll;
+}
+.containerPagesCart{
+        position: relative;
+        height: 370px;
+        // padding-bottom: 200px;
+        overflow: auto;
+
+}
+.total{
+    margin-top: 2vw;
+    padding: 1vw;
+    color:#5f3ac2;
+    font-size: 26px;
+    position: fixed;
+    bottom: 0;
+    h5{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}

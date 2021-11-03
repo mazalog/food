@@ -1,0 +1,73 @@
+@import"../../breakpoints.scss";
+
+.modal{
+    background: rgba(0, 0, 0, 0.349);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 22222;
+    
+    .modalContent{
+        background: #ffffff;
+        width: 82%;
+        padding: 10px 20px;
+        height: 82vh;
+        overflow: hidden;
+        margin: 10vh auto;
+        position: relative;
+        border-radius: 25px;
+        animation: start 0.2s ease-in-out;
+        @include md{
+            width: 40%;
+            padding: 0px
+        }
+        .containerImg{
+            display: grid;
+            width: 100%;
+            justify-items: self-end;
+         img{
+            width: 8%;
+            margin: 15px;
+            @include md{
+                width: 4%;
+              margin: 20px;
+            }
+        }           
+        }
+
+        @-webkit-keyframes start {
+            0%{
+             opacity: 0;
+            }
+            100%{
+             opacity: 1;
+            }
+        }
+        @keyframes start {
+            0%{
+             opacity: 0;
+            }
+            100%{
+             opacity: 1;
+            }
+        }
+       .btnClose{
+        display: flex;
+        position: relative;
+        border: none;
+        right: 0px;
+        left: 270px;
+        background: none;
+        margin-bottom: 32px;
+        }
+        .children{
+            @include md{
+                margin-top: 0px;
+            }
+        }
+    }
+
+}
+

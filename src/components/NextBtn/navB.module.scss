@@ -1,0 +1,93 @@
+
+
+ .containerNavBottom{
+  position: fixed;
+  height: 60px;
+  /* width: 100%; */
+  bottom: 39px;
+  z-index: 600;
+  transition: .3s ease all;
+  display: grid;
+  justify-content: center;
+
+    .navBottom{
+      width: 350px;
+      /* height: 60px; */
+      /* right: 30px; */
+      border-radius: 10px;
+      /* background: #7d5399; */
+      /* display: grid; */
+      /* align-items: center; */
+      /* text-align: center; */
+      grid-template-columns: repeat(3, 1fr);
+      color: #fff;
+      /* box-shadow: 0px 3px 0px 4px #00000033; */
+      color-interpolation: linearRGB;
+      font-weight: 700;
+
+      
+    .container__SubTotal__Text{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      text-align: center;
+      margin: 5px 13px;
+  }
+
+  .checkout__Button{
+    cursor: pointer;
+    width: 70%;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: #5f3ac2;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #5f3ac2;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    }
+     .subtotal__Text{
+      color: #5f3ac2;
+      font-weight: 700;
+    }
+     .subtotal__Price__Text{
+      display: inline-block;
+      width: 65%;
+      text-align: right;
+      margin-right: 10px;
+      font-size: 16pt;
+      font-weight: bold;  
+      vertical-align: middle;
+    }
+
+        .navBottomItem{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+          .containerNavBottonItemCenter{
+            display: grid;
+            justify-content: center;
+            .navBottomItemCenter{
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              top: -20px;
+              box-shadow: 0px 0px 20px 13px #00000033;
+              position: relative;
+              width: 60px;
+              border-radius: 100%;
+              height: 60px;
+              // justify-content: flex-end;
+              background: #f9a11f;
+            }
+          }
+
+
+      }
+    
+  }

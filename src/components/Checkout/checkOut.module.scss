@@ -1,0 +1,61 @@
+.containerCheckout{
+    padding: 10px;
+    margin-top: 8px;
+    form{
+        margin-bottom: 70px;
+    }
+
+    .titleCheckout{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .typesSend{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        .typeSend{
+            border: 1px solid #5f3ac2;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .typeSendActive{
+            background: #5f3ac2;
+            color: #fff;
+            font-size: 600;
+        }
+    }
+
+    .data{
+        padding:5px;
+    }
+    .label{
+        font-size: 17px;
+        color: gray;
+        margin: 0;
+        display: block;
+        font-weight: 600;
+    }
+    .input{
+        width: 95%;
+        border: 1px solid #5f3ac2;
+        border-radius: 10px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .select{
+        width: 99%;
+        border-radius: 10px;
+        height: 37px;
+        margin-bottom: 10px;
+        border: 1px solid #5f3ac2;
+    }
+
+
+
+}
+
+
